@@ -1,0 +1,9 @@
+services:
+  frps:
+    image: registry.cn-beijing.aliyuncs.com/witter/frp:frps
+    restart: unless-stopped
+    ports:
+      - "7000:7000/tcp"
+      - "6000:6000/tcp"
+    volumes:
+      - "./config/frps.toml:/etc/frp/frp.toml:ro"

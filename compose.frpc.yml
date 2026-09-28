@@ -1,0 +1,7 @@
+services:
+  frpc:
+    image: registry.cn-beijing.aliyuncs.com/witter/frp:frpc
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - "./config/frpc.toml:/etc/frp/frp.toml:ro"

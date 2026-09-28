@@ -1,0 +1,10 @@
+bindAddr = "0.0.0.0"
+bindPort = 7000
+
+auth.method = "token"
+auth.token = "change-me-to-a-long-random-token"
+
+allowPorts = [{ single = 6000 }]
+
+log.to = "console"
+log.level = "info"

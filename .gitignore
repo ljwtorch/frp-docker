@@ -1,0 +1,8 @@
+.idea/
+.vscode/
+.DS_Store
+.planning/
+.env
+.env.*
+!.env.example
+/config/*.toml
